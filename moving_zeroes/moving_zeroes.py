@@ -3,10 +3,16 @@ Input: a List of integers
 Returns: a List of integers
 '''
 def moving_zeroes(arr):
-    # Your code here
+    #iterate through arr
+    for i in arr:
+    #is i == 0
+        if i == 0:
+        #if so, move to end of arr
+            arr.append(i)
+            arr.remove(i)
+    return arr
 
-    pass
-
+moving_zeroes([2, 0, 3, 0, 5])
 
 if __name__ == '__main__':
     # Use the main function here to test out your implementation
